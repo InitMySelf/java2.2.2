@@ -5,9 +5,9 @@ public class Main {
         int finalScore = check + replenishment; //финальный счет
         int bonus = replenishment / 100;        //бонусы
         if (replenishment >= 1100) {
-            System.out.println(finalScore + bonus);
+            System.out.printf("bonus=%d; finalScore=%d; \n", finalScore);
         } else {
-            System.out.println(finalScore);
+            System.out.printf("bonus=0; finalScore=%d; \n", finalScore);
         }
 
     }
