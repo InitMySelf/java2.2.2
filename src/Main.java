@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int check = 1200;                       //счет
-        int replenishment = 1050;               //сумма пополнения
-        int finalScore = check + replenishment; //финальный счет
-        int bonus = replenishment / 100;        //бонусы
+        int check = 100;
+        int replenishment = 1050;
+        int bonus;
+
         if (replenishment >= 1100) {
-            System.out.println(finalScore + bonus);
+            bonus = replenishment / 100;
         } else {
-            System.out.println(finalScore);
+            bonus = 0;
         }
 
+        int finalScore = check + replenishment + bonus;
+        System.out.println("Баланс: " + finalScore + " руб. Бонус: " + bonus + " руб.");
     }
 }
